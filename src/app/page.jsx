@@ -21,7 +21,7 @@ const Home = () => {
         {/* Main content expands to fill space */}
         <main className="flex-grow">
           <Suspense fallback={<div>Loading...</div>}>
-                 <HomeContent />
+                 <HomePage />
            </Suspense>
           <FormPage />
         </main>
