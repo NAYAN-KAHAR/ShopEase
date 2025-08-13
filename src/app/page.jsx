@@ -3,7 +3,7 @@ import HeroSection from '@/components/hero';
 import Navbar from '../components/navbar';
 import HomePage from './Home/page';
 import FormPage from './Form/page';
-import { useState } from 'react';
+import { useState,Suspense } from 'react';
 import { isLoggedIn } from './ContextApi/form';
 import Footer from './Footer/page';
 
@@ -20,7 +20,9 @@ const Home = () => {
         
         {/* Main content expands to fill space */}
         <main className="flex-grow">
-          <HomePage />
+          <Suspense fallback={<div>Loading...</div>}>
+                 <HomeContent />
+           </Suspense>
           <FormPage />
         </main>
         {/* Footer stays at the bottom */}
