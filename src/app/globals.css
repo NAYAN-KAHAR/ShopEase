@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure
+};
+.form {
+    background-color: rgba(49, 49, 49, 0.9);
+}
