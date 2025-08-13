@@ -10,6 +10,7 @@ import { useRouter } from 'next/navigation';
 const FormPage = () => {
     const router = useRouter(); 
     const [isSignUp, setisSignUp] = useState(false);
+    
     const formContext = useContext(isLoggedIn);
 
     const[name, setName] = useState();
