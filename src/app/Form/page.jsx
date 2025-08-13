@@ -49,7 +49,7 @@ const FormPage = () => {
              }
                toast.success(res.data);
                setisSignUp(!isSignUp);
-               formContext.setIsLogin(!formContext.isLogin);
+               formContext?.setIsLogin(!formContext.isLogin);
               
            },2000);
         }catch(err){
@@ -71,11 +71,11 @@ if (userRole === 'admin') {
     return(
         <>
         <ToastContainer />
-     {formContext.isLogin && (
+     {formContext?.isLogin && (
           <div className="fixed inset-0 z-50 flex justify-center items-center form " >
          <div className="p-1 px-6 bg-white shadow rounded-lg w-[90%] max-w-md">
             <div className="text-2xl font-bold text-right">
-                <a href="#" onClick={() => formContext.setIsLogin(!formContext.isLogin)}>X</a>
+                <a href="#" onClick={() => formContext?.setIsLogin(!formContext.isLogin)}>X</a>
             </div>
             <h1 className="text-xl font-bold text-center">Sign in to Quick Card e-commerce</h1>
             <p className="text-sm p-1 mt-1 text-gray-600 text-center"> Welcome back! Please sign on to continue</p>
