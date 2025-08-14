@@ -1,4 +1,6 @@
-import HomePageClient from '@/components/HomePageClient';
+// /app/Home/page.js
+
+import HomePageClient from './HomePageClient';
 
 export default function HomePage() {
   return <HomePageClient />;
