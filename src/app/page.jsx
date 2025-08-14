@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import HeroSection from '@/components/hero';
 import Navbar from '../components/navbar';
 import HomePage from './Home/page';

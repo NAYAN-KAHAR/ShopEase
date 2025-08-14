@@ -92,7 +92,7 @@ const handleSearch = (e) => {
       product.productName?.toLowerCase().includes(query) ||
       product.productDesc?.toLowerCase().includes(query)
     );
-    console.log("Filtered:", filtered);
+    // console.log("Filtered:", filtered);
 
     setProducts(filtered);
   } else {
