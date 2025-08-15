@@ -1,9 +1,15 @@
 // /app/Home/page.js
+'use client';
 
+import { Suspense } from 'react';
 import HomePageClient from './HomePageClient';
 
 export default function HomePage() {
-  return <HomePageClient />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomePageClient />
+    </Suspense>
+  );
 }
 
 
